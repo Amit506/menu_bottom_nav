@@ -14,7 +14,7 @@ and the Flutter guide for
 know whether this package might be useful for them.
 ## Getting started
 
-(screenshot.png)
+<img src="https://github.com/Amit506/menu_bottom_nav/blob/main/screenshot.png" alt="screenshot" width="300">
 
 ## Usage
  
