@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:menu_bottom_nav/menu_bottom_nav.dart';
 
 void main() {
   test('adds one to input values', () {

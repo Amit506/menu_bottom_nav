@@ -1,10 +1,6 @@
-import 'dart:io';
-import 'widget.dart';
 import 'menu_bottom_nav.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'items.dart';
-import 'utils/notch_painter.dart';
 
 class MenuNavScaffold extends StatefulWidget {
   const MenuNavScaffold(
@@ -36,10 +32,7 @@ class MenuNavScaffold extends StatefulWidget {
       this.activefloatingIcon,
       this.cancelMenuFloatingIcon,
       this.navHeight = 60})
-      : assert(primary != null),
-        assert(extendBodyBehindAppBar != null),
-        assert(drawerDragStartBehavior != null),
-        assert(navHeight >= 60 && notchMargin >= 8.0),
+      : assert(navHeight >= 60 && notchMargin >= 8.0),
         super(key: key);
   final bool extendBodyBehindAppBar;
   final PreferredSizeWidget? appBar;

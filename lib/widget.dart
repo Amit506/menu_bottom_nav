@@ -25,9 +25,6 @@ class CustomNavBar extends StatefulWidget {
     this.forwardDuration = const Duration(milliseconds: 500),
     this.reverseDuration = const Duration(milliseconds: 400),
   })  : assert(elevation == null || elevation >= 0.0),
-        assert(notchMargin != null),
-        assert(height != null),
-        assert(clipBehavior != null),
         super(key: key);
   final VoidCallback onTapMenuButton;
   final double height;
@@ -301,10 +298,7 @@ class _BottomAppBarClipper extends CustomClipper<Path> {
     required this.shape,
     required this.materialKey,
     required this.notchMargin,
-  })  : assert(geometry != null),
-        assert(shape != null),
-        assert(notchMargin != null),
-        super(reclip: geometry);
+  })  : super(reclip: geometry);
 
   final ValueListenable<ScaffoldGeometry> geometry;
   final NotchedShape shape;
